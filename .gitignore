@@ -1,0 +1,15 @@
+# Środowisko wirtualne
+.venv/
+env/
+venv/
+
+# Pliki edytorów
+.idea/
+.vscode/
+
+# Pliki Pythona
+__pycache__/
+*.py[cod]
+
+# Testy
+.pytest_cache/
