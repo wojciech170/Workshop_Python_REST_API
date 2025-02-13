@@ -13,6 +13,7 @@ pyparsing
 pytest
 pytest-django
 python-dateutil
+pytz
 six
 text-unidecode
 wcwidth
