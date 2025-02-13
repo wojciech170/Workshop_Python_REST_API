@@ -10,6 +10,7 @@ venv/
 # Pliki Pythona
 __pycache__/
 *.py[cod]
+db_config.py
 
 # Testy
 .pytest_cache/

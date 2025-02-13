@@ -76,15 +76,11 @@ WSGI_APPLICATION = 'moviebase.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'HOST': '127.0.0.1',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'rest_api_workshop',
-        'USER': 'postgres',
-        'PASSWORD': 'coderslab',
-    }
-}
+try:
+    from db_config import DATABASES
+except ImportError:
+    DATABASES = {}
+    print("Warning: db_config.py not found or invalid.")
 
 # DATABASES = {
 #     'default': {
